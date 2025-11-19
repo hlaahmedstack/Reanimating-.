@@ -1,0 +1,157 @@
+/* العام */
+body, input, button, p, h1, h2 {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  direction: rtl;
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(135deg, #E3F2FD, #F3E5F5);
+}
+
+/* Awareness */
+.awareness {
+  padding: 60px 20px;
+  background: #C5CAE9;
+  color: #1A237E;
+}
+
+.awareness img.awareness-img {
+  width: 200px;
+  margin: 20px 0;
+}
+
+.start-btn {
+  margin-top: 20px;
+  padding: 14px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: #3F51B5;
+  color: white;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+  background-color: #5C6BC0;
+  transform: scale(1.05);
+}
+
+/* Login */
+.login {
+  padding: 50px 20px;
+}
+
+.login input {
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.login input:focus {
+  border-color: #3F51B5;
+  box-shadow: 0 0 5px #3F51B5;
+  outline: none;
+}
+
+.login button {
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: none;
+  background: #673AB7;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.login button:hover {
+  background-color: #5E35B1;
+  transform: scale(1.05);
+}
+
+/* Dashboard */
+.container {
+  padding: 50px 20px;
+}
+
+.container p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.warning {
+  color: #D32F2F;
+  font-weight: bold;
+}
+
+input[type="file"] {
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+canvas {
+  margin-top: 20px;
+  border: 2px solid #673AB7;
+  max-width: 80%;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+/* صورة المكتب */
+.office-image {
+  margin: 50px 0;
+}
+
+.office-img {
+  max-width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Progress Section */
+.progress-section {
+  padding: 40px 20px;
+  background: #E1BEE7;
+  border-radius: 15px;
+  margin: 30px auto;
+  width: 80%;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #B39DDB;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 25px;
+  margin-top: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background-color: #7E57C2;
+  border-radius: 15px;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Footer */
+footer {
+  background: #C5CAE9;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #1A237E;
+  margin-top: 50px;
+}
