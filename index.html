@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Reanimating</title>
+  <div class="logo-only">
+  <img src="download.jpg" alt="download.jpg"class="logo">
+</div>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Awareness Section -->
+  <div class="awareness" id="awareness">
+    <h1>مرحبًا بك في Reanimating</h1>
+    <p>البهاق حالة جلدية <strong>غير معدية</strong> وتحدث بسبب نقص الصبغة في الجلد.</p>
+    <p>يمكن التحكم بها وتحسينها بالعلاج المناسب والنباتات المضادة للأكسدة.</p>
+    <p>هدفنا: رفع الوعي وتحليل الحالة بشكل آمن وعملي.</p>
+    <img src="assets/lab.png" alt="مختبر" class="awareness-img"> <!-- ضع رابط صورة المختبر هنا -->
+    <button class="start-btn" onclick="showLogin()">انطلق في رحلتك العلاجية من هنا</button>
+  </div>
+
+  <!-- Login Section -->
+  <div class="login" id="login" style="display:none;">
+    <h2>تسجيل الدخول</h2>
+    <input type="email" id="email" placeholder="البريد الإلكتروني"><br>
+    <input type="password" id="password" placeholder="كلمة المرور"><br>
+    <button id="login-btn">دخول</button>
+    <p>أو سجل الدخول عبر Google</p>
+    <button id="google-login">Google Login</button>
+  </div>
+
+  <!-- Dashboard Section -->
+  <div class="container" id="dashboard" style="display:none;">
+    <h1>لوحة التحكم</h1>
+    <p>رفع صورة الجلد لتحديد مساحة البقع البيضاء وحساب مدة العلاج.</p>
+
+    <input type="file" id="upload" accept="image/*">
+    <canvas id="canvas"></canvas>
+
+    <p>مساحة البقع البيضاء: <span id="area">0</span> px²</p>
+    <p>المدة التقديرية للعلاج: <span id="duration">0</span> أسبوع</p>
+    <p class="warning">تحليل تقريبي فقط، استشيري طبيب الجلدية للعلاج النهائي.</p>
+  </div>
+
+  <!-- صورة المكتب الكبيرة -->
+  <div class="office-image">
+    <img src="assets/office.png" alt="صورة المكتب" class="office-img">
+  </div>
+
+  <!-- Progress Section: تنفيذ وتصميم -->
+  <div class="progress-section">
+    <h2>تقدم تنفيذ وتصميم المشروع</h2>
+    <p id="progress-text">لم يتم رفع أي صورة بعد</p>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>تصميم وتنفيذ: حلا أحمد | © 2025 Reanimating</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
